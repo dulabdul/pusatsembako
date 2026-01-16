@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: '/images/hero.jpg', // Pastikan buat gambar ini (1200x630px)
+        url: '/images/hero.webp', // Pastikan buat gambar ini (1200x630px)
         width: 1200,
         height: 630,
         alt: 'Pusat Sembako',
