@@ -1,9 +1,8 @@
 export const SITE_CONFIG = {
   name: "Pusat Sembako",
-  whatsappNumber: "6285822401488", // Ganti nomor disini
-  email: "official@pusatsembako.com",
-  address: "Disdukcapil Lampung Selatan, Marga Agung, Jati Agung, South Lampung Regency, Lampung 35365",
-
+  whatsappNumber: "6285240297807", // Ganti nomor disini
+  email: "admnin@pusatsembako.com",
+  address: "Jl. Suyudono No.97B, Bulustalan, Kec. Semarang Sel., Kota Semarang, Jawa Tengah 50245",
 };
 
 export const TESTIMONIALS = [
