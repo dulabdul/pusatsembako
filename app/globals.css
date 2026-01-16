@@ -1,26 +1,54 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Brand Colors - Modern Grocery Theme */
+
+  /* ================= PRIMARY (Red / Maroon) ================= */
+  --color-primary: #963232;
+
+  --color-primary-light: #B65A5A;   /* hover */
+  --color-primary-soft: #F1DADA;    /* badge / soft background */
+  --color-primary-dark: #702424;    /* active */
+  --color-primary-darker: #4A1818;  /* footer / strong emphasis */
+
+  /* ================= SECONDARY (Green / Natural) ================= */
+  --color-secondary: #0F2F02;
+
+  --color-secondary-light: #2F5A1F; /* hover */
+  --color-secondary-soft: #E3F0DE;  /* background soft */
+  --color-secondary-dark: #0A1F01;  /* active */
+
+  /* ================= ACCENT ================= */
+  --color-accent: #F5E9C8;          /* netral hangat (beras / minyak vibes) */
+
+  /* ================= BACKGROUND ================= */
+  --color-background: #F8FAFC;
+  --color-background-warm: #FBF6F2;
+  --color-background-muted: #F1F5F9;
+
+  /* ================= TEXT ================= */
+  --color-text-main: #1E293B;
+  --color-text-muted: #64748B;
+  --color-text-on-primary: #FFFFFF;
+  --color-text-on-secondary: #FFFFFF;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* ================= CUSTOM UTILITIES ================= */
+@layer utilities {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-background text-text-main antialiased;
 }
